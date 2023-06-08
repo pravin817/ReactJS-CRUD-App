@@ -31,9 +31,8 @@ const EmpEdit = () => {
 
   // Validation
   const [validName, setValidName] = useState(false);
-  const [validEmail,setValidEmail] = useState(false);
-  const [validPhone,setValidPhone] = useState(false);
-
+  const [validEmail, setValidEmail] = useState(false);
+  const [validPhone, setValidPhone] = useState(false);
 
   const navigate = useNavigate();
 
@@ -80,6 +79,7 @@ const EmpEdit = () => {
                     <div className="form-group">
                       <label>Name</label>
                       <input
+                        type="text"
                         required
                         value={name}
                         onMouseDown={(e) => setValidName(true)}
@@ -96,10 +96,11 @@ const EmpEdit = () => {
                     <div className="form-group">
                       <label>Email</label>
                       <input
+                        type="email"
                         required
                         value={email}
                         onMouseDown={(e) => setValidEmail(true)}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="form-control"
                       ></input>
                       {email.length == 0 && validEmail && (
@@ -108,32 +109,20 @@ const EmpEdit = () => {
                     </div>
                   </div>
 
-
                   <div className="col-lg-12">
                     <div className="form-group">
                       <label>Phone</label>
                       <input
+                        type="number"
                         required
-                        value={email}
-                        onMouseDown={(e) => setValidEmail(true)}
-                        onChange={(e) => setName(e.target.value)}
-                        className="form-control"
-                      ></input>
-                      {email.length == 0 && validEmail && (
-                        <span className="text-danger">Enter the email</span>
-                      )}
-                    </div>
-                  </div>
-
-
-                  <div className="col-lg-12">
-                    <div className="form-group">
-                      <label>Phone</label>
-                      <input
                         value={phone}
+                        onMouseDown={(e) => setValidEmail(true)}
                         onChange={(e) => setPhone(e.target.value)}
                         className="form-control"
                       ></input>
+                      {email.length == 0 && validEmail && (
+                        <span className="text-danger">Enter the email</span>
+                      )}
                     </div>
                   </div>
 

@@ -44,17 +44,17 @@ const ListEmployee = () => {
     <div className="container">
       <div className="card">
         <div className="card-title">
-          <h2>Employee Listing </h2>
+          <h3 className="tableheading">Employee Listing </h3>
         </div>
 
         <div className="card-body">
-          <div className="divbtn">
-            <Link className="btn btn-success" to="employee/add">
+          <div className="divbtn mb-3 float-start">
+            <Link className="btn btn-success  " to="employee/add">
               Add new (+)
             </Link>
           </div>
-          <table className="table table-bordered">
-            <thead className="bg-dark text-white">
+          <table className="table table-bordered table-striped">
+            <thead className="bg-blue text-white ">
               <tr>
                 <td>ID</td>
                 <td>Name</td>

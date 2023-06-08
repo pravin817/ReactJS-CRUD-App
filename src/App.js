@@ -8,7 +8,7 @@ import EmployeeDetail from "./Components/EmployeeDetail";
 function App() {
   return (
     <div className="App">
-      <h2>React JS CRUD Operations</h2>
+      <h2 className="title">React JS CRUD Operations</h2>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ListEmployee />}></Route>

@@ -39,9 +39,9 @@ const AddEmployee = () => {
         <form className="container" onSubmit={handleSubmit}>
           <div className="card" style={{ textAlign: "left" }}>
             <div className="card-title">
-              <h2>Add Employee</h2>
+              <h3>Add Employee</h3>
             </div>
-            <div className="crad-body">
+            <div className="card-body">
               <div className="row">
                 <div className="col-lg-12">
                   <div className="form-group">
@@ -59,6 +59,7 @@ const AddEmployee = () => {
                     <label>Name</label>
                     <input
                       required
+                      type="text"
                       value={name}
                       onChange={(event) => setName(event.target.value)}
                       onMouseDown={(event) => setValidName(true)}
@@ -75,6 +76,7 @@ const AddEmployee = () => {
                   <div className="form-group">
                     <label>Email</label>
                     <input
+                      type="email"
                       required
                       value={email}
                       onChange={(event) => setEmail(event.target.value)}
@@ -92,6 +94,7 @@ const AddEmployee = () => {
                   <div className="form-group">
                     <label>Phone</label>
                     <input
+                      type="number"
                       required
                       value={phone}
                       onChange={(event) => setPhone(event.target.value)}

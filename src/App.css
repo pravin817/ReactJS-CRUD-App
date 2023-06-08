@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.title{
+  color:rgb(0, 100, 0);
+  padding: 20px 10px;
+}
+
+.tableheading{
+  padding: 10px 0px;
+}
+
+
 .btn{
   margin: 2px;;
 }

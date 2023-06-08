@@ -1,17 +1,39 @@
 {
   "employee": [
     {
-      "id": 2,
-      "name": "Test2",
-      "email": "t2@gmail.com1",
-      "phone": "12345098765"
+      "id": 1,
+      "name": "Pravin Mhaske",
+      "email": "pravinmhaske817@gmail.com",
+      "phone": "9874563210",
+      "active": true
     },
     {
-      "id": 3,
-      "name": "Test3",
-      "email": "t3@gmail.com",
-      "phone": "1234596325",
-      "active": true
+      "name": "Ganesh Shinde",
+      "email": "ganesh@gmail.com",
+      "phone": "1236547890",
+      "active": true,
+      "id": 2
+    },
+    {
+      "name": "Tejas Patil",
+      "email": "Tejaspatil@gmail.com",
+      "phone": "9874563210",
+      "active": true,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Vivek Mote",
+      "email": "vivekmote@gmail.com",
+      "phone": "9865321470",
+      "active": false
+    },
+    {
+      "name": "Test1",
+      "email": "test1@gmail.com",
+      "phone": "98745632107",
+      "active": true,
+      "id": 5
     }
   ]
 }
