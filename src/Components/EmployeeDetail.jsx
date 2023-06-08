@@ -19,7 +19,7 @@ const EmployeeDetail = () => {
     <div className="container col-lg-6">
       <div className="card" style={{ textAlign: "left" }}>
         <div className="card-title">
-          <h3 >Employee Detail</h3>
+          <h3>Employee Detail</h3>
         </div>
 
         <div className="card-body col-lg-12">

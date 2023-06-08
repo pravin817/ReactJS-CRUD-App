@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const EmpEdit = () => {
   const { empid } = useParams();
 
@@ -46,7 +49,9 @@ const EmpEdit = () => {
       body: JSON.stringify(empdata),
     })
       .then((res) => {
-        alert("Saved successfully.");
+        toast.success("Saved successfully" ,{autoClose:"1000"})
+        ;
+        // alert("Saved successfully.");
         navigate("/");
       })
       .catch((err) => {

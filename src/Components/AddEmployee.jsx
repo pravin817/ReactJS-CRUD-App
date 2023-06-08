@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const AddEmployee = () => {
   const [id, setId] = useState("");
   const [name, setName] = useState("");
@@ -26,7 +29,7 @@ const AddEmployee = () => {
       body: JSON.stringify(empData),
     })
       .then((res) => {
-        alert("Saved Successfully");
+        toast.success("Saved successfully" ,{autoClose:"1000"})
         navigate("/");
       })
       .catch((error) => {
